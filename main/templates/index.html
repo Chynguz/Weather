@@ -13,6 +13,11 @@
   <body style="width: 100%; height: 100vh; background-image: url('static/img/clouds.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
 {% elif sky == 'Snow' %}
   <body style="width: 100%; height: 100vh; background-image: url('static/img/snow.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+
+{% elif sky == 'Haze' or sky == 'Mist' %}
+  <body style="width: 100%; height: 100vh; background-image: url('static/img/mist.jpeg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+{% elif sky == 'Rain' %}
+  <body style="width: 100%; height: 100vh; background-image: url('static/img/rain.jpeg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
 {% else %}
   <body style="width: 100%; height: 100vh; background-image: url('static/img/weather.avif'); background-position: center; background-repeat: no-repeat; background-size: cover;">
 {% endif %} 
@@ -27,7 +32,6 @@
                     <input type="text" class="form-control rounded" placeholder="Ваш город" aria-label="Search"
                       aria-describedby="search-addon" name="city"/>
                       <button class="btn" type="submit">Узнать</button>
-                    </a>
                   </div>
               </form>
       
